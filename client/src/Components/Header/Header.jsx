@@ -137,65 +137,11 @@ const Header = () => {
                 width: "100%",
               }}
             >
-              {/* <NavLink to="/" onClick={toggleMenu} className="user-icon">
-                <FaRegUser style={{ fontSize: "19px", fontWeight: "650" }}  />
-              </NavLink> */}
-              <NavLink to="/registration"  className="user-icon">
+
+              <NavLink to="/login"  className="user-icon" onClick={() => setMenuOpen(!menuOpen)}>
                 <FaRegUser style={{ fontSize: "19px", fontWeight: "650" }} />
               </NavLink>
-              {/* {menuOpen && (
-                <ul
-                  className="dropdown-menu"
-                  style={{
-                    position: "absolute",
-                    width: "230px",
-                    height: "160px",
-                    backgroundColor: "lightyellow",
-                    boxShadow:"box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px",
-                    marginTop: "255px",
-                    zIndex: "999",
-                    transition: "all ease 0.5s",
-                    borderRadius: "5px",
-                    // zIndex:"-999"
-                    display: "flex",
-                    flexDirection: "column",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: "1.5rem",
-                  }}
-                >
-                  <li>
-                    <NavLink
-                      to="/signup"
-                      style={{
-                        backgroundColor: "#29ea11",
-                        color: "white",
-                        width: "130px",
-                        padding: "4px 15px",
-                        borderRadius: "5px",
-                      }}
-                    >
-                      Sign In
-                    </NavLink>
-                  </li>
 
-                  <li>
-                    <span style={{ fontSize: "14px", fontWeight: "400" }}>
-                      New Customer?
-                    </span>
-                    <NavLink
-                      style={{
-                        fontSize: "15px",
-                        fontWeight: "450",
-                        color: "darkblue",
-                      }}
-                      to="/registration"
-                    >
-                      Start here
-                    </NavLink>
-                  </li>
-                </ul>
-              )} */}
             </div>
           </li>
         )}

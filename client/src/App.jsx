@@ -9,6 +9,8 @@ import Footer from "./Components/Footer/Footer";
 import ReactGA from "react-ga4";
 import ShippingPolicy from "./Components/ShippingPolicy/ShippingPolicy";
 import SignUp from "./Components/SignUp/SignUp";
+import SignIn from "./Components/SignIn/SignIn";
+import Shop from "./Components/Shop/Shop";
 // const TRACKING_ID = "G-4BVCT6HLQG"
 const TRACKING_ID = "G-PJ3ERX3LDC"
 ReactGA.initialize(TRACKING_ID);
@@ -33,6 +35,7 @@ function App() {
       <Suspense fallback={ <div style={{display:"flex",alignItems:"center",justifyContent:"center",height:"90vh"}}><RiLoader4Fill style={{color:"darkblue",fontSize:"8rem"}} /></div>}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/shop" element={<Shop/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/policy/privacyPolicy" element={<PrivacyPolicy />} />
@@ -40,6 +43,7 @@ function App() {
           <Route path="/policy/ShippingPolicy" element={<ShippingPolicy />} />
           <Route path="/termsAndConditions" element={<TermsAndConditions />} />
           <Route path="/registration" element={<SignUp />} />
+          <Route path="/login" element={<SignIn />} />
           <Route path="*" element={<Error />} />
         </Routes>
       </Suspense>

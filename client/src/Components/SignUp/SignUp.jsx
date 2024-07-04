@@ -26,7 +26,7 @@ function Copyright(props) {
     >
       {"Copyright © "}
       <Link color="inherit" href="https://gdswellness.com/">
-        indiherbs
+       gdswellness
       </Link>{" "}
       {new Date().getFullYear()}
       {"."}
