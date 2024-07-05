@@ -13,6 +13,8 @@ import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
+import Pagination from '@mui/material/Pagination';
+
 import { useFormik } from "formik";
 import * as Yup from "yup";
 
@@ -124,6 +126,7 @@ const SignUp = () => {
               </Grid>
 
               {/* phone */}
+
               <Grid item xs={12}>
                 <TextField
                   required
