@@ -1,13 +1,42 @@
 .Products {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 2rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
 }
-.ProductsPaginationContainer {
+.ProductCardContainer{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 3rem;
+margin-bottom: 3.5rem;
+}
+.ProductsPaginationContainer{
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 2rem;
+  width: 100%;
+}
 
+@media screen and (max-width:771px) 
+{
+  .ProductsPaginationContainer> nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .ProductsPaginationContainer> nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ProductsPaginationContainer> nav ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+  }
 }
