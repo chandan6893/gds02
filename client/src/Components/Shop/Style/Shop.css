@@ -20,7 +20,7 @@ margin-bottom: 3.5rem;
   width: 100%;
 }
 
-@media screen and (max-width:771px) 
+@media screen and (max-width:805px) 
 {
   .ProductsPaginationContainer> nav {
     display: flex;
