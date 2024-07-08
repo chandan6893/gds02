@@ -3,6 +3,7 @@ import "./Style/Shop.css";
 import axios from "axios";
 import Pagination from "@mui/material/Pagination";
 
+
 // ***********************
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
@@ -22,6 +23,7 @@ const Shop = () => {
   const [endPageIndex, setEndPageIndex] = useState(perPageRecords - 1);
   const topRef = useRef(null);
   const displayPage = (pageNo) => {
+    
     scrollToTop();
     const start_page_index = perPageRecords * pageNo - perPageRecords;
     const end_page_index = perPageRecords * pageNo - 1;
@@ -112,11 +114,11 @@ const Shop = () => {
           </div>
 
           <div className="ProductsPaginationContainer">
-            <Pagination
-              count={totalPages}
-              color="primary"
-              onChange={(event, value) => displayPage(value)}
-            />
+          <Pagination
+            count={totalPages}
+            color="primary"
+            onChange={(event, value) => displayPage(value)}
+          />
           </div>
         </div>
       ) : (

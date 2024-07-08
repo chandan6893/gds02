@@ -11,6 +11,7 @@ import ShippingPolicy from "./Components/ShippingPolicy/ShippingPolicy";
 import SignUp from "./Components/SignUp/SignUp";
 import SignIn from "./Components/SignIn/SignIn";
 import Shop from "./Components/Shop/Shop";
+import Cart from "./Components/Cart/Cart";
 // const TRACKING_ID = "G-4BVCT6HLQG"
 const TRACKING_ID = "G-PJ3ERX3LDC"
 ReactGA.initialize(TRACKING_ID);
@@ -36,6 +37,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/shop" element={<Shop/>} />
+          <Route path="/cart" element={<Cart/>} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
           <Route path="/policy/privacyPolicy" element={<PrivacyPolicy />} />
